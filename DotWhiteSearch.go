@@ -116,6 +116,7 @@ var Path string
 // 参数初始化
 func init() {
 	flag.StringVar(&Path, "p", "C:\\", "设置一个要搜索的目录,默认C盘根目录")
+	flag.Parse()
 }
 
 func main() {
